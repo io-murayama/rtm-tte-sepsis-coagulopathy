@@ -1,0 +1,20 @@
+# Local analysis data and generated outputs (not published)
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+
+# R / session artifacts
+Rplots.pdf
+.Rhistory
+.RData
+.Ruserdata
+*.Rout
+
+# Secrets / local env
+.Renviron
+.env
+.env.*
+
+# macOS
+.DS_Store
