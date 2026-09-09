@@ -1,0 +1,31 @@
+# Local analysis inputs/outputs (must not enter the image)
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+
+# R / session artifacts
+Rplots.pdf
+.Rhistory
+.RData
+.Ruserdata
+*.Rout
+
+# Secrets / local env
+.Renviron
+.env
+.env.*
+
+# VCS / OS / editor
+.git
+.DS_Store
+**/.DS_Store
+
+# renv local library (restored during image build)
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/

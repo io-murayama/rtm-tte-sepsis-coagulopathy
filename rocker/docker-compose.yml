@@ -1,0 +1,16 @@
+services:
+    rstudio:
+        build:
+            context: ..
+            dockerfile: rocker/Dockerfile
+        # user: rstudio
+        # platform: linux/x86_64
+        environment:
+            - TZ=Asia/Tokyo
+            - PASSWORD=password
+            - USERID=${USERID}
+            - GROUPID=${GROUPID}
+        ports:
+            - "8787:8787"
+        volumes:
+            - ..:/home/rstudio/repository
